@@ -1,0 +1,85 @@
+@charset "uft-8";
+html {
+    overflow-x: hidden;
+}
+.row {
+    width: 1260px;
+    margin: 0 auto;
+
+}
+
+#header {
+    background:#000;
+}
+
+#header .row {
+    position: relative;
+}
+
+#header .row .logo {
+    width: 290px;
+    height: 100px;
+    background: url(../img/logo.png) no-repeat;
+}
+
+#header .open
+{
+    display: none;
+}
+
+#header .row .nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    text-align: center;
+}
+
+#header .row .nav .depth1>li {
+    display: inline-block;
+    padding: 30px 30px 35px;
+    color: #eee;
+    position: relative;
+}
+#header .row .depth1 > li.on .depth2 {
+    display: block;
+}
+#header .row .nav .depth2 {
+    position: absolute;
+    top:90px;
+    left:10px;
+    display: block;
+    background: rgba(0, 0, 0, .9);
+    border-top:1px solid #39cfdf;
+    width: 160px;
+    text-align: left;
+    padding: 10px 0;
+    line-height: 25px;
+    display: none;
+}
+
+#header .row .depth2 li {
+    padding: 3px 20px;
+    font-size: 13px;
+    clear: both;
+    color: #eee;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#header .row .depth2 li.on {
+    text-decoration:underline;
+}
+
+#header .row .login {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 11px;
+    color:#ccc;
+}
+
+#header .row .loginbox a {padding:0px 7px;}

@@ -1,0 +1,105 @@
+@charset "uft-8";
+
+@media screen and (max-width: 1024px) {
+    .row {
+    width: 100%;
+    margin: 0 auto;
+}
+#header .open { display:block;
+    position:absolute; right:10px; 
+    top:10px; transform:translateY(0%);
+    font-size:21px; 
+    color: #fff;
+}
+
+  #header .row .logo {
+    width: 100%;
+    height: 50px;
+    background: url(../img/logo-m.png) no-repeat;
+}  
+#header .row {
+    position: relative;
+}
+#header .row .nav {
+    position: static;
+    top: 0%;
+    left: 0px;
+    width: 100%;
+    transform: translateY(0%);
+    z-index: 9999;
+    text-align: left;
+    display: block;
+    margin-top: 55px;
+    display: none;
+}
+#header .row .nav .depth1 > li > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+}
+#header .row .nav .depth1 > li:hover > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    background: #39cfdf;
+}
+#header .row .nav .depth1>li {
+    display: block;
+    padding: 0px 0px;
+    color: #eee;
+    position: relative;
+}
+#header .row .depth1 > li.on .depth2 {
+    display: block;
+}
+#header .row .depth2 > li.on {
+    text-decoration:underline;
+    color:#39cfdf
+}
+#header .row .nav .depth2 {
+    position: static;
+    top:90px;
+    left:10px;
+    display: block;
+    background: rgba(0, 0, 0, .9);
+    border-top:0px solid #39cfdf;
+    width: 100%;
+    text-align: left;
+    padding: 0px 0;
+    line-height: 25px;
+    display: none;
+}
+
+#header .row .login {width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    transform: translateY(0%);
+    font-size: 11px;
+    margin: 10px 0px 7px;
+    padding: 0 0 0 15px;
+    color:#ccc;
+    height: 50px;
+    border: 1px solid #333;
+    border-right:none;
+    border-left:none ;
+    display: none;
+}
+
+#header .row .loginbox {
+    left: 10px;
+    position: absolute;
+    top:40%;
+}
+
+
+#header .row .loginbox a {padding:0px 0px;}
+#header .row .loginbox a {margin-right: 10px; padding: 5px 10px; background: #333; color:#ddd; border-radius: 3px;}
+#header .row .loginbox a:nth-child(2) {display: none;}
+
+#header .row .open.on ~ .nav, 
+#header .row .open.on ~ .login {display: block;}
+
+}

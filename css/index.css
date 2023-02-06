@@ -1,0 +1,66 @@
+/* #section .article1 {  }
+#section .slide { height:650px; 
+    background-size:cover; 
+    background-position:center; display:none;
+    position:relative; 
+}
+#section .slide1 { background-image:url(../img/main_img1.jpg);
+    display:block; }
+#section .slide2 { background-image:url(../img/main_img2.jpg) }
+#section .slide3 { background-image:url(../img/main_img3.jpg) }
+#section .article1 .slide .slide_text { 
+    position:absolute; top:50%;
+    transform:translateY(-50%); 
+    color:#fff; text-align:center;
+    width:100%; 
+} 
+#section .article1 .slide .slide_text h2 { 
+    font-size: 42px; font-weight: 800; }
+.article1 .slide .slide_text p {
+    font-size: 16px;line-height: 24px;
+    margin:30px 0; }   */
+
+/* article1 구역 */
+
+#section .slideOuter .slideInner .slide {
+    height: 37vw;
+    background-size:cover; 
+    background-position:center;
+    position:relative; 
+}
+/* slide 구역 */
+#section .slideOuter .slideInner .slide1 {background-image: url(../img/visual01.jpg);}
+
+#section .slideOuter .slideInner .slide .text {position: absolute; top:50%; width: 100%; text-align: center; transform: translateY(-50%); color:#fff}
+#section .slideOuter .slideInner .slide .text h2 {font-size: 54px; padding: 0px 0px 15px;}
+#section .slideOuter .slideInner .slide .text p {font-size: 14px; line-height: 1.5;}
+#section .slideOuter .slideInner .slide2 {background-image: url(../img/visual02.jpg);}
+#section .slideOuter .slideInner .slide3 {background-image: url(../img/visual03.jpg);}
+
+#section .slideOuter .slick-arrow {position: absolute; top:50%; transform: translateY(-50%); border:none; font-size: 50px; color: #fff;}
+#section .slideOuter .slick-prev {left: 50px; z-index: 99999999; opacity: 0;}
+#section .slideOuter .slick-next {right: 50px; opacity: 0;}
+#section .slideOuter .slick-dots {position: absolute; bottom: 20px; width: 100%; text-align:center ;}
+#section .slideOuter .slick-dots li {display: inline-block; margin: 0 5px;}
+#section .slideOuter .slick-dots li button {width: 50px; height: 5px; text-indent: 9999999999px; border: 1px solid rgba(255, 255, 255, 0.7); background: rgba(255, 255, 255, 0);}
+#section .slideOuter .slick-dots li.slick-active button {background: rgba(255, 255, 255, 0.7);  border: 1px solid rgba(255, 255, 255, 0);}
+
+/* article2 구역 */
+
+.text-box {text-align: center; padding: 100px 15px; width: 1260px;}
+.text-box h2 {font-size: 32px; color:#333;}
+.text-box p {font-size: 17px; padding: 20px 0px 25px; color:#777;}
+.text-box a {padding: 6px 30px; width: 150px; height: 32px; color:#555; border: 1px solid #555; display: inline-block;}
+.text-box a:hover {background: #002a62; border: none; color: #fff;}
+
+/* article3 구역 */
+
+/* article4 구역 */
+.article4 {display: inline-block; margin: 70px 0px;}
+.title-3 {text-align: center;}
+.title-3 > h2 {font-size: 32px; padding: 10px 0px 0px; color:#333}
+.title-3 > p {font-size: 17px; padding: 5px 0px 30px; color: #777;}
+.post-box ul > li {float: left; width: 24%; padding: 10px;}
+.post-box ul > li > a > div {border: 1px solid rgb(221, 221, 221); border-top: none; padding: 15px;}
+.post-box ul > li > a > div > h3 {margin: 5px 0px 0px;}
+.post-box ul > li > a > div > p {margin: 5px 0px;}
