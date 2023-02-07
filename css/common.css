@@ -3,7 +3,7 @@ html {
     overflow-x: hidden;
 }
 .row {
-    width: 1260px;
+    max-width: 1260px;
     margin: 0 auto;
 
 }
@@ -17,7 +17,12 @@ html {
 }
 
 #header .row .logo {
+    float: left;
     width: 290px;
+}
+
+#header .row .logo a {
+    display: block;
     height: 100px;
     background: url(../img/logo.png) no-repeat;
 }
@@ -28,40 +33,40 @@ html {
 }
 
 #header .row .nav {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    z-index: 9999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; */
+    float: left;
+    margin-top: 12px;
     text-align: center;
 }
 
-#header .row .nav .depth1>li {
+#header .row .nav .depth1> li {
     display: inline-block;
     padding: 30px 30px 35px;
     color: #eee;
     position: relative;
 }
-#header .row .depth1 > li.on .depth2 {
+#header .row .nav .depth1 > li.on .depth2 {
     display: block;
 }
 #header .row .nav .depth2 {
+    display: none;
     position: absolute;
-    top:90px;
+    top:100%;
     left:10px;
-    display: block;
     background: rgba(0, 0, 0, .9);
     border-top:1px solid #39cfdf;
     width: 160px;
     text-align: left;
     padding: 10px 0;
-    line-height: 25px;
-    display: none;
+    z-index: 99999;
 }
 
-#header .row .depth2 li {
-    padding: 3px 20px;
+#header .row .nav .depth2 li {
+    padding: 10px 20px;
     font-size: 13px;
     clear: both;
     color: #eee;
@@ -69,11 +74,11 @@ html {
     text-align: left;
 }
 
-#header .row .depth2 li.on {
+#header .row .nav .depth2 li.on {
     text-decoration:underline;
 }
 
-#header .row .login {
+#header .row .navbox .login {
     position: absolute;
     top: 50%;
     right: 10px;

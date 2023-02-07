@@ -34,13 +34,13 @@
 #section .slideOuter .slideInner .slide .text {position: absolute; top:50%; width: 100%; text-align: center; transform: translateY(-50%); color:#fff}
 #section .slideOuter .slideInner .slide .text h2 {font-size: 54px; padding: 0px 0px 15px; transform: translateY(-100%); opacity: 0; transition: all 0.8s 0.3s;}
 #section .slideOuter .slideInner .slide.slick-current.slick-active .text h2 {transform: translateY(0%); opacity: 1;}
-#section .slideOuter .slideInner .slide .text p {font-size: 14px; line-height: 1.5; transform: translateY(100%); opacity: 0; transition: all 0.8s 0.3s;}
+#section .slideOuter .slideInner .slide .text p {font-size: 14px; line-height: 1.5; transform: translateY(100%); opacity: 0; transition: all 0.8s 0.5s;}
 #section .slideOuter .slideInner .slide.slick-current.slick-active .text p {transform: translateY(0%); opacity: 1;}
 #section .slideOuter .slideInner .slide2 {background-image: url(../img/visual02.jpg);}
 #section .slideOuter .slideInner .slide3 {background-image: url(../img/visual03.jpg);}
 
 #section .slideOuter .slick-arrow {position: absolute; top:50%; transform: translateY(-50%); border:none; font-size: 50px; color: #fff;}
-#section .slideOuter .slick-prev {left: 50px; z-index: 99999999; opacity: 0;}
+#section .slideOuter .slick-prev {left: 50px; z-index: 9999; opacity: 0;}
 #section .slideOuter .slick-next {right: 50px; opacity: 0;}
 #section .slideOuter .slick-dots {position: absolute; bottom: 20px; width: 100%; text-align:center ;}
 #section .slideOuter .slick-dots li {display: inline-block; margin: 0 5px;}
